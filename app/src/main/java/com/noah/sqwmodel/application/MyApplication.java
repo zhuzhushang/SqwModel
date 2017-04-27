@@ -1,6 +1,7 @@
 package com.noah.sqwmodel.application;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.blankj.utilcode.util.Utils;
 
@@ -10,11 +11,21 @@ import com.blankj.utilcode.util.Utils;
 
 public class MyApplication extends Application{
 
+    private static Context context;
 
     @Override
     public void onCreate() {
         super.onCreate();
+        //暂时retrofitUtils有用到
+        context = getApplicationContext();
+        initConfig();
 
+
+    }
+
+    private void initConfig() {
+
+        //工具类初始化
         Utils.init(this);
 
     }

@@ -12,6 +12,9 @@ public class Constants {
     public static final String LAST_VERSION_CODE = "is_last_version";
 
 
+    public static final String BASE_URL = "http://api.k780.com:88/";
+
+
 
 
 }
