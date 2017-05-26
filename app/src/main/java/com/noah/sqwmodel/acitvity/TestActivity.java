@@ -9,7 +9,7 @@ import com.noah.sqwmodel.R;
  * Created by noah on 2017/4/21.
  */
 
-public class TestActivity extends BaseActivity{
+public class TestActivity extends BaseAbsActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

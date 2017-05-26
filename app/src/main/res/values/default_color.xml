@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
     <!--白-->
     <color name="white">#ffffffff</color>
     <!--黑-->
     <color name="black">#ff000000</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <!--半透明白-->
+    <color name="trans_white">#8fffffff</color>
+    <!--半透明黑-->
+    <color name="trans_black">#8f000000</color>
     <!--红-->
     <color name="red">#ffff0000</color>
     <!--橙-->

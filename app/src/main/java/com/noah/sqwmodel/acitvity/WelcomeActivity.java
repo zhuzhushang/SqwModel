@@ -15,7 +15,7 @@ import com.noah.sqwmodel.utils.SharedPreferencesUtils;
  * Created by noah on 2017/4/21.
  */
 
-public class WelcomeActivity extends BaseActivity {
+public class WelcomeActivity extends BaseAbsActivity {
 
     private ImageView welcome_img;
     private Handler handler;
@@ -73,7 +73,7 @@ public class WelcomeActivity extends BaseActivity {
 
             boolean isFirstStart = (boolean) SharedPreferencesUtils.getParam(WelcomeActivity.this, Constants.IS_FIRST_START_GUIDE, true);
             int lastVersionCode = (int) SharedPreferencesUtils.getParam(WelcomeActivity.this, Constants.LAST_VERSION_CODE, 1);
-            int currentVersionCode = AppUtils.getAppVersionCode(context);
+            int currentVersionCode = AppUtils.getAppVersionCode(getPackageName());
             boolean isNewVersion = currentVersionCode > lastVersionCode ? true : false;
             if (isFirstStart || isNewVersion) {
                 startActivity(GuideActivity.class);

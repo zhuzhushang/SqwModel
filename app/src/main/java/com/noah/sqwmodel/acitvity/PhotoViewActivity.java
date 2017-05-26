@@ -9,7 +9,7 @@ import com.noah.sqwmodel.R;
  * Created by noah on 2017/4/21.
  */
 
-public class PhotoViewActivity extends BaseActivity{
+public class PhotoViewActivity extends BaseAbsActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

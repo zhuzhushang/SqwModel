@@ -20,7 +20,7 @@ import java.util.List;
  * Created by noah on 2017/4/21.
  */
 
-public class GuideActivity extends BaseActivity implements ViewPager.OnPageChangeListener,OnItemClickListener{
+public class GuideActivity extends BaseAbsActivity implements ViewPager.OnPageChangeListener,OnItemClickListener{
 
     private ConvenientBanner convenientBanner;
     private List<Integer> mListLocalImage;
@@ -96,7 +96,7 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
 
             startActivity(MainActivity.class);
             SharedPreferencesUtils.putParam(context, Constants.IS_FIRST_START_GUIDE,false);
-            SharedPreferencesUtils.putParam(context,Constants.LAST_VERSION_CODE, AppUtils.getAppVersionCode(context));
+            SharedPreferencesUtils.putParam(context,Constants.LAST_VERSION_CODE, AppUtils.getAppVersionCode(getPackageName()));
             GuideActivity.this.finish();
         }
     }

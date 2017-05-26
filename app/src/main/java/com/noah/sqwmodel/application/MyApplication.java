@@ -28,5 +28,9 @@ public class MyApplication extends Application{
         //工具类初始化
         Utils.init(this);
 
+
+//        CrashHandler crashHandler = CrashHandler.getInstance();
+//        crashHandler.init(getApplicationContext());
+
     }
 }

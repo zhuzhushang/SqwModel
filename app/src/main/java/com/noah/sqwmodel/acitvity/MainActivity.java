@@ -12,7 +12,7 @@ import com.noah.sqwmodel.fragment.TabOneFragment;
 import com.noah.sqwmodel.fragment.TabThreeFragment;
 import com.noah.sqwmodel.fragment.TabTwoFragment;
 
-public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener{
+public class MainActivity extends BaseAbsActivity implements RadioGroup.OnCheckedChangeListener{
 
     //切换需要的fragment
     private TabOneFragment mTabOneFragment;
